@@ -86,7 +86,7 @@ window.CONTENT = {
         "content using retrieval-augmented generation.",
       metrics: [],
       tags: ["Python", "RAG", "LLM"],
-      video: "assets/videos/rap_pdf_chat.mp4",
+      video: "assets/videos/rag_pdf_chat.mp4",
       youtube: "",
       image: "",
       links: [
