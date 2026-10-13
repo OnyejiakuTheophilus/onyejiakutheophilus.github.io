@@ -52,7 +52,7 @@ window.CONTENT = {
         { value: "189 ms", label: "inference on Android" }
       ],
       tags: ["YOLOv11n", "TensorFlow Lite", "Android", "Python"],
-      video: "",
+      video: "assets/videos/Itomato_status.mp4",
       youtube: "",
       image: "",
       links: [
