@@ -218,6 +218,6 @@ window.CONTENT = {
   education: {
     degree: "B.Eng. Agricultural and Bioresources Engineering",
     school: "Federal University of Technology Owerri, Nigeria",
-    detail: "2015 to 2022. CGPA 4.20 / 5.0, Best Graduating Student."
+    detail: "2015 to 2022. Best Graduating Student."
   }
 };
