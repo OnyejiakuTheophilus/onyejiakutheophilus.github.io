@@ -72,7 +72,7 @@ window.CONTENT = {
       tags: ["TensorFlow", "Keras", "CNN", "Streamlit"],
       video: "",
       youtube: "",
-      image: "",
+      image: "assets/images/flower.jpeg",
       links: [
         { label: "Live demo",  url: "https://onyejiakutheophilus-web-app-for-flower-image-flowermodel-les9va.streamlit.app/" },
         { label: "IEEE paper", url: "https://ieeexplore.ieee.org/document/10761803" }
