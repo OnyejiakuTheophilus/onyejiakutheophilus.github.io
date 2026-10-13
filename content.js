@@ -132,26 +132,6 @@ window.CONTENT = {
         { label: "EDA repo", url: "https://github.com/OnyejiakuTheophilus/Explorator-Data-Analysis-and-Machine-Learning-on-Data-Professionals--Salaries" }
       ]
     },
-    {
-      title: "Real-time tomato quality detection",
-      category: "Computer vision",
-      status: "Manuscript under review",
-      summary:
-        "An Android app that classifies tomatoes as healthy, defective or unripe in real time. " +
-        "I annotated 2,400 images, fine-tuned YOLOv11n for 50 epochs and optimised it with TensorFlow Lite for on-device use.",
-      metrics: [
-        { value: "95.4%",  label: "mAP50" },
-        { value: "86.3%",  label: "mAP50-95" },
-        { value: "189 ms", label: "inference on Android" }
-      ],
-      tags: ["YOLOv11n", "TensorFlow Lite", "Android", "Python"],
-      video: "assets/videos/Itomato_status.mp4",
-      youtube: "",
-      image: "assets/images/tomato.PNG",
-      links: [
-        
-      ]
-    },
   ],
 
 
