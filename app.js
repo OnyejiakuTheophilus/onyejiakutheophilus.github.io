@@ -1,4 +1,4 @@
-/* Builds the page from content.js. You should not need to edit this file. */
+
 (function () {
   "use strict";
   var C = window.CONTENT;
@@ -69,16 +69,10 @@
   }
 
   var projects = C.projects || [];
-  var out = "";
-  if (projects.length) {
-    out += '<article class="feature">' + media(projects[0], 0, true) + '<div class="body">' + projectBody(projects[0]) + "</div></article>";
-  }
-  if (projects.length > 1) {
-    out += '<div class="grid">' + projects.slice(1).map(function (p, i) {
-      return '<article class="card">' + media(p, i + 1) + '<div class="body">' + projectBody(p) + "</div></article>";
-    }).join("") + "</div>";
-  }
-  $("project-list").innerHTML = out;
+  /* one project per row: media on the left, description on the right */
+  $("project-list").innerHTML = '<div class="rowlist">' + projects.map(function (p, i) {
+    return '<article class="feature">' + media(p, i, true) + '<div class="body">' + projectBody(p) + "</div></article>";
+  }).join("") + "</div>";
 
   /* ---------- Writing ---------- */
   $("writing-intro").textContent = C.writingIntro || "";
