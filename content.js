@@ -214,7 +214,7 @@ window.CONTENT = {
 
   dataWork: [
     { title: "Sales dashboard",
-  image: "assets/images/sales_dashboard.png",
+  image: "assets/images/superstore_dashboard.PNG",
   note: "Power BI dashboard tracking monthly revenue, top products and regional performance.",
   tags: ["Power BI", "SQL"],
   links: [ { label: "View dashboard", url: "https://your-link-here" } ] },
