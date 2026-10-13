@@ -218,7 +218,7 @@ window.CONTENT = {
   note: "Power BI dashboard tracking monthly revenue, top products and regional performance.",
   tags: ["Power BI", "SQL"],},
     { title: "Breast cancer EDA and model evaluation",
-     image: "assets/images/__results___96_1.png",
+     image: "assets/images/breast cancer.png",
       note: "Exploratory analysis and a comparison of classification models, with evaluation reports.",
       url: "https://www.kaggle.com/code/theophilusonyejiaku/breast-cancer-eda-status-prediction", label: "Kaggle" },
     { title: "Model tuning, a different approach",
