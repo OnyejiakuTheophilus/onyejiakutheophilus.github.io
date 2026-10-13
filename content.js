@@ -95,11 +95,11 @@ window.CONTENT = {
       ]
     },
     {
-      title: "School CBT Software",
+      title: "School CBT and Report Card Generator Software",
       category: "Full-stack system",
       status: "In use at a school",
       summary:
-        "An offline, LAN-based computer-based testing system built for a Nigerian school: 40 students, 14 subjects, " +
+        "An offline, LAN-based computer-based testing system built for a Nigerian school " +
         "no internet needed on exam day. Includes an exam-retake workflow with a permanent audit log.",
       metrics: [],
       tags: ["Flask", "MySQL", "SQLAlchemy", "JWT", "Flutter Web"],
