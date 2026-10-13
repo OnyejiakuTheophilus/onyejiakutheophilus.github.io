@@ -105,7 +105,7 @@ window.CONTENT = {
       tags: ["Flask", "MySQL", "SQLAlchemy", "JWT", "Flutter Web"],
       video: "",
       youtube: "",
-      image: "",
+      image: "assets/images/cbt.PNG",
       links: []
     },
     {
