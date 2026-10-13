@@ -10,6 +10,7 @@ window.CONTENT = {
       "I have shipped a YOLOv11n detector to Android, co-authored an IEEE conference paper, " +
       "and published 660+ technical articles for developer-focused companies.",
     email: "onyejiakut@gmail.com",
+    image: " ",
     heroCaption:
       "Tomato quality detection on Android: healthy, defective and unripe fruit, 95.4% mAP50."
   },
