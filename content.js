@@ -95,7 +95,7 @@ window.CONTENT = {
       ]
     },
     {
-      title: "Morning Star CBT",
+      title: "School CBT Software",
       category: "Full-stack system",
       status: "In use at a school",
       summary:
