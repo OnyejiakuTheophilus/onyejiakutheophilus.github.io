@@ -188,6 +188,7 @@ window.CONTENT = {
 
   dataWork: [
     { title: "Breast cancer EDA and model evaluation",
+     image: "",
       note: "Exploratory analysis and a comparison of classification models, with evaluation reports.",
       url: "https://www.kaggle.com/code/theophilusonyejiaku/breast-cancer-eda-status-prediction", label: "Kaggle" },
     { title: "Model tuning, a different approach",
