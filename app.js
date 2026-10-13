@@ -109,10 +109,22 @@
   renderArticles();
 
   /* ---------- Data work ---------- */
-  $("data-list").innerHTML = (C.dataWork || []).map(function (d) {
-    return '<li><span class="t">' + esc(d.title) + "</span>" +
-      (d.url ? '<span class="go">' + link(d.label || "Open", d.url) + "</span>" : "<span></span>") +
-      '<span class="note">' + esc(d.note) + "</span></li>";
+  /* same layout as projects: picture on the left, description on the right */
+  $("data-list").innerHTML = (C.dataWork || []).map(function (d, i) {
+    var item = {
+      title: d.title,
+      category: d.category || "Data work",
+      status: d.status || "",
+      summary: d.note || "",
+      metrics: d.metrics || [],
+      tags: d.tags || [],
+      video: d.video || "",
+      youtube: d.youtube || "",
+      image: d.image || "",
+      links: d.links || (d.url ? [{ label: d.label || "Open", url: d.url }] : [])
+    };
+    return '<article class="feature">' + media(item, i + projects.length, true) +
+      '<div class="body">' + projectBody(item) + "</div></article>";
   }).join("");
 
   /* ---------- About ---------- */
