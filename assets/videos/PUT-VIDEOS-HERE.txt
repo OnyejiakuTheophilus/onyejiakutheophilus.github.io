@@ -1,0 +1,1 @@
+Put your demo videos (.mp4) in this folder. See README.md for how to shrink them first.
