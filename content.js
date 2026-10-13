@@ -6,7 +6,7 @@ window.CONTENT = {
     name: "Theophilus Onyejiaku C.",
     role: "AI/Machine Learning Engineer and Technical writer",
     intro:
-      "I build computer vision and LLM applications, then write about how they work. " +
+      "I build AI solutions, object detection,computer vision and LLM applications, then write about how they work. " +
       "I have shipped a YOLOv11n detector to Android, build RAG and LLM systems, co-authored an IEEE conference paper, " +
       "and published 660+ technical articles for developer-focused companies.",
     email: "onyejiakut@gmail.com",
