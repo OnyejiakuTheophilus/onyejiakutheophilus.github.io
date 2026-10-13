@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Theophilus Onyejiaku | Machine learning engineer and technical writer</title>
+  <meta name="description" content="Portfolio of Theophilus Onyejiaku: computer vision and LLM projects, an IEEE paper, and 660+ technical articles.">
+  <meta name="theme-color" content="#2B45D9">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="wrap" aria-label="Main">
+      <a class="brand" href="#top" id="brand">Theophilus Onyejiaku</a>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#data">Data work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero-text">
+        <h1 id="h-name"></h1>
+        <p class="role" id="h-role"></p>
+        <p class="intro" id="h-intro"></p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="#writing">Read my writing</a>
+        </div>
+      </div>
+
+      <figure class="frame">
+        <svg viewBox="0 0 480 360" role="img" aria-labelledby="frame-title" id="frame-svg">
+          <title id="frame-title">Three tomatoes, each outlined by a detection box and labelled healthy, defective or unripe</title>
+          <defs>
+            <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+              <path d="M24 0H0V24" fill="none" stroke="#DDE2F3" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="480" height="360" fill="#F0F2FB"/>
+          <rect width="480" height="360" fill="url(#grid)"/>
+
+          <!-- healthy -->
+          <g>
+            <circle cx="112" cy="196" r="52" fill="#E5484D"/>
+            <ellipse cx="94" cy="176" rx="14" ry="8" fill="#F27C80" transform="rotate(-30 94 176)"/>
+            <path d="M112 146l-9 8 9-2 9 2z M112 152l-14-2 8 8z M112 152l14-2-8 8z" fill="#2F9E5B"/>
+            <rect class="box b1" x="52" y="136" width="120" height="120" rx="3" fill="none" stroke="#2B45D9" stroke-width="2.5"/>
+            <rect x="52" y="112" width="74" height="24" fill="#2B45D9"/>
+            <text x="60" y="129" font-size="13" font-weight="600" fill="#fff">healthy</text>
+          </g>
+
+          <!-- defective -->
+          <g>
+            <circle cx="262" cy="212" r="48" fill="#C9484A"/>
+            <circle cx="278" cy="226" r="14" fill="#6B3A2E"/>
+            <circle cx="244" cy="238" r="7" fill="#6B3A2E"/>
+            <path d="M262 166l-9 8 9-2 9 2z M262 172l-14-2 8 8z M262 172l14-2-8 8z" fill="#2F9E5B"/>
+            <rect class="box b2" x="206" y="158" width="112" height="112" rx="3" fill="none" stroke="#D9822B" stroke-width="2.5"/>
+            <rect x="206" y="134" width="88" height="24" fill="#D9822B"/>
+            <text x="214" y="151" font-size="13" font-weight="600" fill="#fff">defective</text>
+          </g>
+
+          <!-- unripe -->
+          <g>
+            <circle cx="380" cy="132" r="42" fill="#7FBF6A"/>
+            <ellipse cx="366" cy="116" rx="11" ry="6" fill="#A5D993" transform="rotate(-30 366 116)"/>
+            <path d="M380 92l-8 7 8-2 8 2z M380 97l-12-2 7 7z M380 97l12-2-7 7z" fill="#2F7A45"/>
+            <rect class="box b3" x="330" y="86" width="100" height="100" rx="3" fill="none" stroke="#14867A" stroke-width="2.5"/>
+            <rect x="330" y="62" width="70" height="24" fill="#14867A"/>
+            <text x="338" y="79" font-size="13" font-weight="600" fill="#fff">unripe</text>
+          </g>
+        </svg>
+        <figcaption id="h-caption"></figcaption>
+      </figure>
+    </section>
+
+    <section class="stats wrap" id="stats" aria-label="Highlights"></section>
+
+    <section class="block wrap" id="projects">
+      <h2>Machine learning projects</h2>
+      <p class="lede">Systems I built, trained and shipped. Where there is a demo, you can watch it run.</p>
+      <div id="project-list"></div>
+    </section>
+
+    <section class="block wrap" id="writing">
+      <h2>Writing</h2>
+      <p class="lede" id="writing-intro"></p>
+      <p class="publishers" id="publishers"></p>
+      <div class="filters" id="filters" role="group" aria-label="Filter articles by publisher"></div>
+      <ul class="articles" id="article-list"></ul>
+    </section>
+
+    <section class="block wrap" id="data">
+      <h2>Data work</h2>
+      <p class="lede">Notebooks, analysis and training from my work as a data analyst.</p>
+      <ul class="rows" id="data-list"></ul>
+    </section>
+
+    <section class="block wrap about" id="about">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div id="about-text"></div>
+        <div>
+          <dl class="skills" id="skills"></dl>
+          <p class="edu" id="education"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block wrap contact" id="contact">
+      <h2>Contact</h2>
+      <p class="lede">I am open to machine learning, data and technical writing roles, remote or on-site.</p>
+      <p><a class="btn primary" id="email-btn" href="#">Email me</a></p>
+      <ul class="link-list" id="links"></ul>
+      <h3>Download my CV</h3>
+      <ul class="link-list" id="cvs"></ul>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p id="foot"></p>
+  </footer>
+
+  <noscript><p class="wrap" style="padding:2rem 0">This page needs JavaScript to show its content. Please enable it.</p></noscript>
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
