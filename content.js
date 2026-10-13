@@ -165,6 +165,9 @@ window.CONTENT = {
     { title: "A Guide to Installing Node-RED",
       publisher: "InfluxData", topic: "Developer tools",
       url: "https://www.influxdata.com/blog/guide-installing-node-red/" },
+    {title: "Playwright vs Puppeteer: What’s the Difference?",
+    publisher: "Autify", topic: "Web Scraping", url: "https://autify.com/blog/playwright-vs-puppeteer"
+    },
     { title: "A Guide to Understanding the Pivot Function in Oracle SQL",
       publisher: "Tricentis", topic: "SQL",
       url: "https://www.tricentis.com/learn/a-guide-to-understanding-the-pivot-function-in-oracle-sql" },
