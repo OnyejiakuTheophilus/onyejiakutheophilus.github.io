@@ -10,9 +10,9 @@ window.CONTENT = {
       "I have shipped a YOLOv11n detector to Android, co-authored an IEEE conference paper, " +
       "and published 660+ technical articles for developer-focused companies.",
     email: "onyejiakut@gmail.com",
-    image: " ",
-    heroCaption:
-      "Tomato quality detection on Android: healthy, defective and unripe fruit, 95.4% mAP50."
+    /* Your picture. Replace assets/images/profile.jpg with any photo of you (same file name),
+       or change this path to point at a different file. */
+    photo: "assets/images/profile.jpg"
   },
 
  
@@ -216,11 +216,45 @@ window.CONTENT = {
     "I also work as a data analyst and trainer. I have analysed datasets of more than 10 million rows with SQL and Python, built automated dashboards, and taught SQL, Python, Excel, Power BI and Tableau to 400+ learners."
   ],
 
+  /* Tools. icon is optional: tools without one show a neat letter badge instead. */
   skills: [
-    { group: "Machine learning",   items: "TensorFlow, Keras, YOLO, CNNs, Scikit-learn, OpenCV, TensorFlow Lite" },
-    { group: "LLM applications",   items: "Retrieval-augmented generation, OpenAI API, LLMOps" },
-    { group: "Engineering",        items: "Python, Flask, REST APIs, MySQL, SQLAlchemy, Flutter, Streamlit, Git" },
-    { group: "Data",               items: "SQL, Pandas, NumPy, Power BI, Tableau, Excel, R, MATLAB" }
+    { group: "Machine learning", items: [
+      { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/tensorflow/tensorflow-original.svg" },
+      { name: "TensorFlow Lite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/tensorflow/tensorflow-original.svg" },
+      { name: "Keras", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/keras/keras-original.svg" },
+      { name: "YOLO" },
+      { name: "OpenCV", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/opencv/opencv-original.svg" },
+      { name: "Scikit-learn", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/scikitlearn/scikitlearn-original.svg" },
+      { name: "CNNs" }
+    ] },
+    { group: "LLM applications", items: [
+      { name: "RAG" },
+      { name: "OpenAI API", icon: "https://cdn.simpleicons.org/openai/412991" },
+      { name: "LLMOps" }
+    ] },
+    { group: "Engineering", items: [
+      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" },
+      { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flask/flask-original.svg" },
+      { name: "REST APIs" },
+      { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" },
+      { name: "SQLAlchemy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/sqlalchemy/sqlalchemy-original.svg" },
+      { name: "Flutter", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flutter/flutter-original.svg" },
+      { name: "Streamlit", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/streamlit/streamlit-original.svg" },
+      { name: "Android", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/android/android-original.svg" },
+      { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" },
+      { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" },
+      { name: "FFmpeg", icon: "https://cdn.simpleicons.org/ffmpeg/007808" }
+    ] },
+    { group: "Data", items: [
+      { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" },
+      { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/pandas/pandas-original.svg" },
+      { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/numpy/numpy-original.svg" },
+      { name: "Power BI", icon: "https://cdn.simpleicons.org/powerbi/F2C811" },
+      { name: "Tableau", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/tableau/tableau-original.svg" },
+      { name: "Excel", icon: "https://cdn.simpleicons.org/microsoftexcel/217346" },
+      { name: "R", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/r/r-original.svg" },
+      { name: "MATLAB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/matlab/matlab-original.svg" }
+    ] }
   ],
 
   education: {

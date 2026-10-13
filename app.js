@@ -21,7 +21,12 @@
   $("h-name").textContent = S.name;
   $("h-role").textContent = S.role;
   $("h-intro").textContent = S.intro;
-  $("h-caption").textContent = S.heroCaption || "";
+
+  var photo = $("h-photo"), initials = $("h-initials");
+  initials.textContent = S.name.split(/\s+/).filter(Boolean).slice(0, 2).map(function (w) { return w[0]; }).join("").toUpperCase();
+  photo.alt = "Photo of " + S.name;
+  photo.onerror = function () { $("avatar").classList.add("no-photo"); };
+  if (S.photo && S.photo.trim()) { photo.src = S.photo.trim(); } else { $("avatar").classList.add("no-photo"); }
 
   $("stats").innerHTML = (C.stats || []).map(function (s) {
     return '<div class="stat"><b>' + esc(s.value) + "</b><span>" + esc(s.label) + "</span></div>";
@@ -118,8 +123,15 @@
 
   /* ---------- About ---------- */
   $("about-text").innerHTML = (C.about || []).map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
-  $("skills").innerHTML = (C.skills || []).map(function (s) {
-    return "<div><dt>" + esc(s.group) + "</dt><dd>" + esc(s.items) + "</dd></div>";
+  function iconFor(t) {
+    var mono = esc(t.name.replace(/[^A-Za-z0-9]/g, "").slice(0, 3));
+    var img = t.icon ? '<img src="' + esc(t.icon) + '" alt="" loading="lazy" onerror="this.parentNode.classList.add(\'fallback\');this.remove()">' : "";
+    return '<span class="ico' + (t.icon ? "" : " fallback") + '" data-mono="' + mono + '">' + img + "</span>";
+  }
+  $("tools").innerHTML = (C.skills || []).map(function (g) {
+    return '<div class="tool-group"><h4>' + esc(g.group) + '</h4><ul>' + (g.items || []).map(function (t) {
+      return '<li class="tool">' + iconFor(t) + "<span>" + esc(t.name) + "</span></li>";
+    }).join("") + "</ul></div>";
   }).join("");
   if (C.education) {
     $("education").innerHTML = "<b>" + esc(C.education.degree) + "</b><br>" + esc(C.education.school) + "<br>" + esc(C.education.detail);
@@ -129,9 +141,37 @@
   $("email-btn").setAttribute("href", "mailto:" + S.email);
   $("email-btn").textContent = "Email " + S.email;
   $("links").innerHTML = (C.links || []).map(function (l) { return "<li>" + link(l.label, l.url) + "</li>"; }).join("");
-  $("cvs").innerHTML = (C.cvs || []).map(function (c) {
-    return '<li><a href="' + esc(c.file) + '" download>' + esc(c.label) + "</a></li>";
-  }).join("");
+  var form = $("mail-form"), statusEl = $("mail-status"), sendBtn = $("mail-send");
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var d = new FormData(form);
+    if (!d.get("name").trim() || !/^\S+@\S+\.\S+$/.test(d.get("email").trim()) || !d.get("message").trim()) {
+      statusEl.className = "form-note err";
+      statusEl.textContent = "Please fill in your name, a valid email and a message.";
+      return;
+    }
+    sendBtn.disabled = true; statusEl.className = "form-note"; statusEl.textContent = "Sending...";
+    var payload = {
+      name: d.get("name"), email: d.get("email"),
+      subject: d.get("subject") || "Message from your portfolio",
+      message: d.get("message"), _honey: d.get("_honey"),
+      _subject: "Portfolio message: " + (d.get("subject") || d.get("name")),
+      _replyto: d.get("email"), _template: "table", _captcha: "false"
+    };
+    fetch("https://formsubmit.co/ajax/" + S.email, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify(payload)
+    }).then(function (r) { return r.json(); }).then(function (j) {
+      if (String(j.success) !== "true") throw new Error("failed");
+      form.reset();
+      statusEl.className = "form-note ok";
+      statusEl.textContent = "Thank you! Your message has been sent. I will reply soon.";
+    }).catch(function () {
+      statusEl.className = "form-note err";
+      statusEl.innerHTML = "Sorry, that did not go through. Please email me directly at <a href=\"mailto:" + esc(S.email) + "\">" + esc(S.email) + "</a>.";
+    }).then(function () { sendBtn.disabled = false; });
+  });
 
   $("foot").textContent = "© " + new Date().getFullYear() + " " + S.name + ". Built with plain HTML, CSS and JavaScript.";
 })();
