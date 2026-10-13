@@ -3,7 +3,7 @@
 window.CONTENT = {
 
   site: {
-    name: "Theophilus Onyejiaku",
+    name: "Theophilus Onyejiaku C.",
     role: "AI/Machine Learning Engineer and Technical writer",
     intro:
       "I build computer vision and LLM applications, then write about how they work. " +
