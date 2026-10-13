@@ -202,7 +202,7 @@ window.CONTENT = {
 
   /* ---------- About ---------- */
   about: [
-    "I am an AI Engineer and technical writer based in Nigeria. I like projects where a model has to work outside a notebook: on a phone, in a web app, or in a school with no internet.",
+    "I am an AI/Machine Learning Engineer and technical writer based in Nigeria. I like projects where a model has to work outside a notebook: on a phone, in a web app, or in a school with no internet.",
     "I also work as a data analyst and trainer. I have analysed datasets of more than 10 million rows with SQL and Python, built automated dashboards, and taught SQL, Python, Excel, Power BI and Tableau to 400+ learners."
   ],
 
