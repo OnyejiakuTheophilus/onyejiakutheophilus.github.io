@@ -55,7 +55,7 @@ window.CONTENT = {
       tags: ["YOLOv11n", "TensorFlow Lite", "Android", "Python"],
       video: "assets/videos/Itomato_status.mp4",
       youtube: "",
-      image: "",
+      image: "assets/images/tomato.PNG",
       links: [
         
       ]
