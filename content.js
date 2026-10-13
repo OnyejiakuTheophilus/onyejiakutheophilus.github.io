@@ -32,11 +32,7 @@ window.CONTENT = {
   ],
 
 
-  cvs: [
-    { label: "Machine learning engineer CV", file: "assets/cv/CV-Machine-Learning-Engineer.pdf" },
-    { label: "Technical content writer CV",  file: "assets/cv/CV-Technical-Content-Writer.pdf" },
-    { label: "Data analyst CV",              file: "assets/cv/CV-Data-Analyst.pdf" }
-  ],
+
 
 
   projects: [
