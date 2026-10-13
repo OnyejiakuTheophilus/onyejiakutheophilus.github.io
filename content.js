@@ -1,19 +1,7 @@
-/* =====================================================================
-   THIS IS THE ONLY FILE YOU NEED TO EDIT.
-   Everything on the website comes from here.
 
-   Rules (they keep the page from breaking):
-   - Keep the quotation marks "like this" around text.
-   - Keep the comma at the end of every line and every { } block.
-   - To remove an item, delete its whole { ... }, block.
-   - To add an item, copy a whole { ... }, block and paste it right after
-     another one, then change the text.
-   - Save the file and refresh the page to see your change.
-   ===================================================================== */
 
 window.CONTENT = {
 
-  /* ---------- Top of the page ---------- */
   site: {
     name: "Theophilus Onyejiaku",
     role: "Machine learning engineer and technical writer",
@@ -26,7 +14,7 @@ window.CONTENT = {
       "Tomato quality detection on Android: healthy, defective and unripe fruit, 95.4% mAP50."
   },
 
-  /* ---------- The four numbers under the intro ---------- */
+ 
   stats: [
     { value: "660+",  label: "technical articles written" },
     { value: "95.4%", label: "mAP50 for the tomato detector" },
@@ -34,7 +22,6 @@ window.CONTENT = {
     { value: "400+",  label: "learners taught" }
   ],
 
-  /* ---------- Where people can find you ---------- */
   links: [
     { label: "GitHub",         url: "https://github.com/OnyejiakuTheophilus" },
     { label: "LinkedIn",       url: "https://www.linkedin.com/in/theophilus-chidalu-onyejiaku/" },
@@ -43,23 +30,14 @@ window.CONTENT = {
     { label: "Kaggle",         url: "https://www.kaggle.com/theophilusonyejiaku" }
   ],
 
-  /* ---------- CV downloads (put the PDFs in assets/cv/) ---------- */
+
   cvs: [
     { label: "Machine learning engineer CV", file: "assets/cv/CV-Machine-Learning-Engineer.pdf" },
     { label: "Technical content writer CV",  file: "assets/cv/CV-Technical-Content-Writer.pdf" },
     { label: "Data analyst CV",              file: "assets/cv/CV-Data-Analyst.pdf" }
   ],
 
-  /* =====================================================================
-     MACHINE LEARNING PROJECTS
-     The first project is shown large, so put your best one first.
 
-     To show a demo video, use ONE of these (leave the other empty ""):
-       video:   "assets/videos/my-demo.mp4"   <- a file you uploaded to assets/videos/
-       youtube: "dQw4w9WgXcQ"                 <- the part after v= in a YouTube link
-     If both are empty, the card shows a plain coloured tile instead.
-     Optional: image: "assets/images/cover.jpg" (used when there is no video).
-     ===================================================================== */
   projects: [
     {
       title: "Real-time tomato quality detection",
@@ -78,7 +56,7 @@ window.CONTENT = {
       youtube: "",
       image: "",
       links: [
-        // { label: "GitHub", url: "https://github.com/OnyejiakuTheophilus/..." }
+        
       ]
     },
     {
@@ -161,12 +139,7 @@ window.CONTENT = {
     }
   ],
 
-  /* =====================================================================
-     WRITING
-     "publishers" are the companies you wrote for. "articles" are the links.
-     The filter buttons are made from the "publisher" names automatically,
-     so spell each publisher the same way every time.
-     ===================================================================== */
+
   writingIntro:
     "I write tutorials and guides on machine learning, software testing, SQL and developer tools. " +
     "I run the code before I explain it, and my published articles reach the first page of Google for their target keywords.",
@@ -211,9 +184,7 @@ window.CONTENT = {
       url: "https://www.educative.io/answers/what-is-xgboost" }
   ],
 
-  /* =====================================================================
-     DATA WORK (smaller section: notebooks, repos, analysis)
-     ===================================================================== */
+
   dataWork: [
     { title: "Breast cancer EDA and model evaluation",
       note: "Exploratory analysis and a comparison of classification models, with evaluation reports.",
@@ -231,7 +202,7 @@ window.CONTENT = {
 
   /* ---------- About ---------- */
   about: [
-    "I am a machine learning engineer and technical writer based in Nigeria. I like projects where a model has to work outside a notebook: on a phone, in a web app, or in a school with no internet.",
+    "I am an AI Engineer and technical writer based in Nigeria. I like projects where a model has to work outside a notebook: on a phone, in a web app, or in a school with no internet.",
     "I also work as a data analyst and trainer. I have analysed datasets of more than 10 million rows with SQL and Python, built automated dashboards, and taught SQL, Python, Excel, Power BI and Tableau to 400+ learners."
   ],
 
