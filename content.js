@@ -89,7 +89,7 @@ window.CONTENT = {
       tags: ["Python", "RAG", "LLM"],
       video: "assets/videos/rag_pdf_chat.mp4",
       youtube: "",
-      image: "",
+      image: "assets/images/rag_pdf.PNG",
       links: [
         // { label: "GitHub", url: "https://github.com/OnyejiakuTheophilus/rag_pdf_chat" }
       ]
