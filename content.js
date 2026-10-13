@@ -4,7 +4,7 @@ window.CONTENT = {
 
   site: {
     name: "Theophilus Onyejiaku",
-    role: "Machine learning engineer and technical writer",
+    role: "AI/Machine Learning Engineer and Technical writer",
     intro:
       "I build computer vision and LLM applications, then write about how they work. " +
       "I have shipped a YOLOv11n detector to Android, co-authored an IEEE conference paper, " +
