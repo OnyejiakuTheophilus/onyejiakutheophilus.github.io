@@ -71,7 +71,11 @@ a:hover { color: var(--accent); }
 
 /* ---------- Projects ---------- */
 .feature { display: grid; grid-template-columns: 1.15fr 1fr; gap: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; margin-bottom: 28px; }
-.feature .media { aspect-ratio: auto; min-height: 100%; }
+.rowlist { display: grid; gap: 28px; }
+.rowlist .feature { margin-bottom: 0; }
+.feature .media { aspect-ratio: auto; min-height: 320px; }
+.feature .tile { min-height: 320px; }
+.feature .body { display: flex; flex-direction: column; justify-content: center; gap: 10px; }
 .feature .body { padding: 32px 32px 30px; }
 .feature h3 { font: 700 1.7rem/1.15 var(--head); letter-spacing: -.02em; margin: 6px 0 12px; }
 
