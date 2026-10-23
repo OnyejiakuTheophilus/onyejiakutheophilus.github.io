@@ -198,6 +198,14 @@ window.CONTENT = {
       note: "A decision report on 9,994 retail orders. Found that orders discounted above 20% lost $135K, 97% of them were loss-making, and the losses grew 52% in 2017. Recommends a 20% discount ceiling, worth up to $135K in extra profit.",
       tags: ["SQL", "Excel", "Data storytelling", "Business analysis"],
       links: [ { label: "Read the full report (PDF)", url: "assets/files/Superstore_Sales_Report.pdf" } ] },
+
+    { title: "Adventure Works sales report: where does the profit come from?",
+      image: "assets/images/adventure_works_report_cover.png",
+      note: "A decision report on 30,293 orders across resellers and online. Found that online earns 96% of gross profit from 28% of sales, while 36% of reseller order lines sell below cost, a $3.2M loss. Also found a discount column that read zero on every row while 3,079 reseller lines carried hidden discounts. Recommends a price floor at cost and shifting growth spend online, worth an estimated $3.2M (+25%).",
+      tags: ["Python", "Microsoft Excel", "Power BI", "SQL", "Data cleaning", "Data storytelling", "Business analysis"],
+      links: [ { label: "Read the full report (PDF)", url: "assets/files/Adventure_Works_Sales_Report.pdf" } ] },
+
+    
     { title: "Breast cancer EDA and model evaluation",
      image: "assets/images/breast cancer.png",
       note: "Exploratory analysis and a comparison of classification models, with evaluation reports.",
