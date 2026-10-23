@@ -193,10 +193,11 @@ window.CONTENT = {
 
 
   dataWork: [
-    { title: "Sales dashboard",
-  image: "assets/images/superstore_dashboard.png",
-  note: "Power BI dashboard tracking monthly revenue, top products and regional performance.",
-  tags: ["Power BI", "SQL"],},
+    { title: "Superstore sales report: should we cap discounts at 20%?",
+      image: "assets/images/superstore_report_cover.png",
+      note: "A decision report on 9,994 retail orders. Found that orders discounted above 20% lost $135K, 97% of them were loss-making, and the losses grew 52% in 2017. Recommends a 20% discount ceiling, worth up to $135K in extra profit.",
+      tags: ["SQL", "Excel", "Data storytelling", "Business analysis"],
+      links: [ { label: "Read the full report (PDF)", url: "assets/files/Superstore_Sales_Report.pdf" } ] },
     { title: "Breast cancer EDA and model evaluation",
      image: "assets/images/breast cancer.png",
       note: "Exploratory analysis and a comparison of classification models, with evaluation reports.",
@@ -211,7 +212,11 @@ window.CONTENT = {
       url: "https://www.kaggle.com/code/theophilusonyejiaku/classification-reports-of-prediction-models/notebook", label: "Kaggle" },
     { title: "Data analytics boot camp",
       note: "Virtual training in SQL, Python, Excel, Power BI and Tableau. 400+ learners taught across several countries.",
-      url: "", label: "" }
+      url: "", label: "" },
+    { title: "Sales dashboard",
+      image: "assets/images/superstore_dashboard.png",
+      note: "Power BI dashboard tracking monthly revenue, top products and regional performance.",
+      tags: ["Power BI", "SQL"],},
   ],
 
   /* ---------- About ---------- */
